@@ -20,6 +20,5 @@ public class Main {
         solucao = heuristica.solucao(problema);
         System.out.println(solucao.toSring());
         entradaArquivo.close();
-
     }
 }

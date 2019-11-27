@@ -63,9 +63,10 @@ public class Arquivo {
 	//retorna o numero de cidades 
 	public int getNumeroDeCidades() {
 		return numeroDeCidades;
-	}
+    }
+    
 	//retorna as distancias
 	public ArrayList<ArrayList<Integer>> getDistancias() {
 		return distancias;
-	}
+    }
 }

@@ -55,7 +55,7 @@ public class Heuristica {
 		}
 	}
 
-    //Pega o caminho e adicina na lista de cidades
+    //Pega o peso do caminho e adicina na lista de cidades
     public void getCaminho(int start, int set, int[][]matrizCaminho, Solucao solucao) {
 		if(matrizCaminho[start][set] == -1)
 			return;
