@@ -13,16 +13,16 @@ public class Problema {
     }
     
     //retorna informacao do problema em string
-    public String toS() {
-		String toS = "";
-		toS += "Numero de cidades: " + numeroDeCidades + "\nDistancias: ";
+    public String toSring() {
+		String toString = "";
+		toString += "Numero de cidades: " + numeroDeCidades + "\nDistancias: ";
 		for(int i = 0; i < distancias.size(); i++) {
-			toS += "\n" + (i+1) + ": ";
+			toString += "\n" + (i+1) + ": ";
 			for (int j = 0; j < distancias.get(i).size(); j++) {
-				toS += (j+1) + "(" + distancias.get(i).get(j) + ") ";
+				toString += (j+1) + "(" + distancias.get(i).get(j) + ") ";
 			}
 		}
-		return toS;
+		return toString;
 	}
     
 	//retorna o numero de cidades

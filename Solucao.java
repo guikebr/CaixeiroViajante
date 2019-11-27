@@ -19,17 +19,17 @@ public class Solucao {
     }
     
     //Solucao do caminho em string
-    public String toS() {
-		String toS = "";
-		toS += "Distancia Minima: " + distanciaMinima;
-		toS += "\nCaminho: ";
+    public String toSring() {
+		String toString = "";
+		toString += "Distancia Minima: " + distanciaMinima;
+		toString += "\nCaminho: ";
 		for(int i = 0; i < caminho.size(); i++) {
 			if(i < caminho.size()-1)
-				toS += (caminho.get(i) + 1) + " -> "; 
+				toString += (caminho.get(i) + 1) + " -> "; 
 			else
-				toS += (caminho.get(i) + 1);
+				toString += (caminho.get(i) + 1);
 		}
-		return toS;
+		return toString;
     }
 
     //incrementa distancia
@@ -54,7 +54,7 @@ public class Solucao {
     
 	//getCaminho
 	public ArrayList<Integer> getCaminho() {
-		return (ArrayList<Integer>) caminho.clone();
+		return (ArrayList<Integer>) caminho;
     }
     
 	//getDistanciaMinima

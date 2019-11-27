@@ -10,7 +10,7 @@ public class Main {
         Arquivo arquivo = new Arquivo(nomeArquivo);
 
         Problema problema = new Problema(arquivo.getNumeroDeCidades(), arquivo.getDistancias());
-        System.out.println("\nInformacao:\n" + problema.toS());
+        System.out.println("\nInformacao:\n" + problema.toSring());
         
         Heuristica heuristica = new Heuristica();
 
@@ -18,7 +18,7 @@ public class Main {
         
         System.out.println("\nProcurando caminho... ");
         solucao = heuristica.solucao(problema);
-        System.out.println(solucao.toS());
+        System.out.println(solucao.toSring());
         entradaArquivo.close();
 
     }
