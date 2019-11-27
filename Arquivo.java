@@ -19,7 +19,7 @@ public class Arquivo {
             for(int i = 0; i < numeroDeCidades; i++) {
 				distancias.add(new ArrayList<Integer>());
 				for(int j = 0; j < numeroDeCidades; j++) {
-					distancias.get(i).add(0);					
+					distancias.get(i).add(0);	
 				}
             }
             while((linha = br.readLine()) != null && formatoCorreto) {
